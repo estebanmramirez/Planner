@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: linear-gradient(45deg, var(--second-color), var(--primary-color));
+}
+
+:root {
+ --primary-color: #76a6ff; 
+ --second-color: #D16BA5;
+ --font-family: 'Nunito', sans-serif;
+}
+
+/* Inicio */
+
+.main {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 15px 15px 15px;
+    height: 100vh;
+}
+
+/* Container de la izquierda*/
+
+.container__left {
+    width: 250px;
+    margin-right: 30px;
+   /* background-color: white;
+    opacity: 0.3;*/
+    border-radius: 10px; 
+    box-shadow: 5px 5px 10px 4px;
+}
+
+/* Container de la izquierda superior*/
+
+.container__left--div {
+    margin-bottom: 30px;
+}
+
+.div__h2 {
+    color: black;
+    font-family: var(--font-family);
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.div__p {
+    color: black;
+    font-family: var(--font-family);
+    font-size: 1.6em;
+    margin-left: 10px;
+}
+/*  */
+
+/* Container izquierda inferior*/
+
+.container__left--div2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.div2__img {
+    width: 30px;
+    height: 30px;
+}
+
+.div__p {
+    padding: 10px;
+}
+
+/* Container de la derecha */
+
+.container__right {
+    width: 950px;
+   /* background-color: white;
+    opacity: 0.3;*/
+    border-radius: 10px; 
+    box-shadow: 5px 5px 10px 4px;
+}
+
+.container__planner {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  
+}
+
+.div__text {
+    font-family: var(--font-family);
+    font-size: 1.6em;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.card {
+    height: 120px;
+    background-color: red;
+    border-radius: 20px;
+    background-color: #9fbdf5;
+    margin-left: 20px;
+    width: 150px;
+    margin-bottom: 20px;
+    box-shadow: 3px 5px 10px 4px; ;
+}
+
+.card__name {
+    position: relative;
+    z-index: 1;
+    top: 45px;
+    right: 5px;
+    float: left;
+    transform: rotate(270deg);
+    font-family: var(--font-family);
+    color: black;
+    font-size: 1.6em;
+}
+
+.subcard {
+    position: relative;
+    left: 38px;
+    height: 120px;
+    border-radius: 20px;
+    width: 75%;
+    background-color: var(--primary-color);
+}
+
+.subcard__time {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: black;
+    font-family: var(--font-family);
+    font-size: 2.5em;
+}
+
+.subcard__text {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: black;
+    font-family: var(--font-family);
+    font-size: 1.6em;
+}
